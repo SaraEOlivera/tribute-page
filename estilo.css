@@ -1,0 +1,382 @@
+html {
+    background-color: #262626;
+}
+
+body {
+    width: 1300px;
+    margin: auto;
+    margin-top: 25px;
+    scroll-behavior: smooth;
+    border-radius: 15px;
+    background-color: #e6e6e6;
+    margin-bottom: 100px;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 250px;
+}
+
+header .title {
+    padding-top: 50px;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 60px;
+    text-align: center;
+}
+
+.subtitulo {
+    font-family: 'Josefin Slab', serif;
+    font-size: 27px;
+    text-align: center;
+}
+
+/* Seccion Presentacion */
+.contenedor-presentacion{
+    height: 600px;
+}
+
+.contenedor-presentacion .foto {
+    width: 40%;
+    height: 500px;
+    float: left;
+}
+
+.foto .img-presentacion {
+    height: 500px;
+}
+
+.contenedor-presentacion .cita {
+    padding-top: 150px;
+    width: 60%;
+    height: 500px;
+    float: left;
+}
+
+.cita .frase {
+    font-family: 'Josefin Slab', serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Seccion Info Aime */
+.info-aime {
+    height: 650px;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.foto-info {
+    float: right;
+    height:400px;
+    width: 60%;
+}
+
+.img-info {
+    width: 100%;
+}
+
+.foto-info figcaption {
+    font-family: 'Josefin Slab', serif;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.info .texto-info{
+    float: left;
+    height: 550px;
+    font-family: 'Josefin Slab', serif;
+    width: 40%;
+    font-size: 24px;
+    padding: 80px 15px;
+}
+
+/* Seccion Info extra */
+.info-extra {
+    margin-top: 60px;
+    width: 100%;
+    height:500px;
+}
+
+.subtitulo-extra {
+    font-family: 'Playfair Display SC', serif;
+    padding-bottom: 30px;
+    font-size: 26px;
+}
+
+.datos{
+    margin: auto;
+    height:400px;
+    width: 80%;
+    border: 1px solid #e6e6e6;
+    box-shadow: 7px 10px 5px #d9d9d9;
+}
+
+.accordion-header, .accordion-body {
+    font-family: 'Josefin Slab', serif;
+    font-size: 18px;
+}
+
+/* Seccion Video */
+.seccion-video {
+    width: 100%;
+    height: 550px;
+}
+
+.video {
+    height: 500px;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #e6e6e6;
+    box-shadow: 7px 10px 5px #d9d9d9;
+}
+
+.video iframe {
+    width: 100%;
+}
+
+/* Seccion Carrousel */
+.carrousel {
+    width: 100%;
+    height: 600px;
+}
+
+.carrousel-serie  {
+    margin: auto;
+    width: 70%;
+}
+
+.img-carrusel {
+    width: auto;
+    height: 400px;
+    max-height: 400px;
+  }
+
+.descripcion-carrousel {
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;  
+}
+
+.descripcion-carrousel a {
+    text-decoration: none;
+    color: #262626;
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    padding: 45px 0;
+    font-family: 'Josefin Slab', serif;
+}
+
+footer a {
+    text-decoration: none;
+    color: #262626;
+    font-style: italic;
+}
+
+footer i {
+    font-size: 20px;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+footer i:hover {
+    border: 1px solid #434242;
+    border-radius: 50%;
+}
+
+
+
+/* Comienzo Responsive */
+@media all and (min-width: 600px) and (max-width: 1300px){
+    
+    body {
+        width: 580px;
+    }
+    
+    /* Header */
+    header {
+        width: 100%;
+        height: 100px;
+    }
+    
+    /* Seccion Presentacion */
+    .contenedor-presentacion{
+        height: 500px;
+    }
+    
+    .contenedor-presentacion .foto {
+        height: 500px;
+        margin-top: 150px;
+    }
+    
+    .contenedor-presentacion .cita {
+        padding-top: 150px;
+        height: 500px;
+    }
+    
+    .cita .frase {
+        font-size: 35px;
+        padding: 0 7px;
+    }
+    
+    /* Seccion Info Aime */
+    .info-aime {
+        height: 900px;
+    }
+    
+    .foto-info {
+        float: none;
+        height:400px;
+        width: 100%;
+    }
+    
+    .img-info {
+        width: 100%;
+    }
+    
+    .info .texto-info{
+        float: none;
+        height: 400px;
+        width: 100%;
+    }
+    
+    /* Seccion Info extra */
+    .info-extra {
+        height:600px;
+    }
+    
+    /* Seccion Carrousel */
+    .carrousel {
+        width: 100%;
+        height: 700px;
+    }
+    
+}
+
+@media all and (max-width: 599px){
+
+    body {
+        width: 100%;
+    } 
+    
+    /* Header */
+    header {
+        width: 100%;
+        height: 200px;
+    }
+    
+    header .title {
+        font-size: 50px;
+    }
+    
+    .subtitulo {
+        font-size: 24px;
+    }
+    
+    /* Seccion Presentacion */
+    .contenedor-presentacion{
+        height: 1000px;
+    }
+    
+    .contenedor-presentacion .foto {
+        width: 100%;
+        height: 600px;
+        float: none;
+    }
+    
+    .contenedor-presentacion .cita {
+        padding-top: 150px;
+        width: 100%;
+        float: none;
+    }
+    
+    .cita .frase {
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    /* Seccion Info Aime */
+    .info-aime {
+        height: 900px;
+        width: 100%;
+    }
+
+    .info .texto-info{
+        float: none;
+        height: 400px;
+        width: 100%;
+        font-size: 20px;
+        padding: 0px 15px;
+    }
+    
+    .foto-info {
+        float: none;
+        height:400px;
+        width: 100%;
+    }
+    
+    .img-info {
+        width: 100%;
+    }
+
+    /* Seccion Info extra */
+    .info-extra {
+        margin-top: 60px;
+        width: 100%;
+        height:600px;
+    }
+    
+    .subtitulo-extra {
+        font-size: 30px;
+    }
+    
+    .datos{
+        width: 100%;
+    }
+    
+    .accordion-header, .accordion-body {
+        font-size: 26px;
+    }
+    
+    /* Seccion Carrousel */
+    .carrousel {
+        width: 100%;
+        height: 800px;
+    }
+    
+    .carrousel-serie  {
+        margin: auto;
+        width: 90%;
+    }
+    
+    .descripcion-carrousel {
+        font-size: 22px;  
+    }
+
+    .img-carrusel {
+        width: auto;
+        height: 350px;
+        max-height: 350px;
+      }
+
+    
+    footer {
+        padding: 25px 0;
+        font-size: 18px;
+    }    
+}
+
+
+
+
+
+
+
+
+
+
